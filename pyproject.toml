@@ -1,0 +1,15 @@
+[project]
+name = "brlc"
+version = "0.0.1"
+description = "Busca de estados e municípios brasileiros"
+authors = [{name="Bernardo Vergara"}]
+dependencies = [
+    "pandas", "openpyxl"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+brlc = ["*.xlsx"]
